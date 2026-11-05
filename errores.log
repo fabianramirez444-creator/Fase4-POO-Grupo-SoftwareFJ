@@ -1,0 +1,14 @@
+[2026-11-05 14:03:09.499031] ERROR: ErrorValidacionCliente: La identificación y el nombre no pueden estar vacíos.
+[2026-11-05 14:03:09.500205] ERROR: ErrorReservaInvalida: Cliente no encontrado en el sistema.
+[2026-11-05 14:03:09.500795] ERROR: ErrorServicioNoDisponible: El servicio con ID X99 no existe.
+[2026-11-05 14:03:09.501336] ERROR: ErrorReservaInvalida: Fallo al confirmar reserva 3.
+Detalle técnico: Las horas de reserva de sala deben ser mayores a 0.
+Traceback (most recent call last):
+  File "C:\Users\Janus\AppData\Local\Temp\ipykernel_18072\1901764388.py", line 138, in confirmar
+    self.costo_total = self.servicio.calcular_costo(self.cantidad_tiempo, descuento, impuesto)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Janus\AppData\Local\Temp\ipykernel_18072\1901764388.py", line 88, in calcular_costo
+    raise ValueError("Las horas de reserva de sala deben ser mayores a 0.") # Lanza un error nativo si no se cumple.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Las horas de reserva de sala deben ser mayores a 0.
+
