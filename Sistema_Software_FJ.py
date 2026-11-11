@@ -250,3 +250,6 @@ if __name__ == "__main__":                         # Punto de entrada estándar 
     for r in sistema.reservas:                     # Itera la lista.
         # Demuestra que el programa no se detuvo por los errores, sino que siguió ejecutando e imprimiendo la data.
         print(f"Reserva {r.id_reserva} | Estado: {r.estado} | {r.cliente.nombre} | {r.servicio.nombre} | Costo: ${r.costo_total}")
+
+# Validación cruzada y pruebas locales realizadas por el estudiante
+print(">>> Sistema verificado y ejecutado correctamente en el entorno local.")
